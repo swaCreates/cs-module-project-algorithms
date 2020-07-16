@@ -4,8 +4,10 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
-
-    pass
+    xor= 0 # works as bits 0 & 1
+    for nums in arr:
+        xor ^= nums
+    return xor                   
 
 
 if __name__ == '__main__':
